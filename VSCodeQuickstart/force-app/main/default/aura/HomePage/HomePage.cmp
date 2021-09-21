@@ -1,0 +1,42 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <ltng:require styles="{! $Resource.Bootstrap + '/bootstrap/css/bootstrap.min.css'}" scripts="{!join(',',
+    $Resource.jquery,
+    $Resource.Bootstrap + '/bootstrap/js/bootstrap.min.js')
+    }" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <body>
+
+        <div class="jumbotron text-center" 
+            style="background-image: url(https://sm.ign.com/t/ign_latam/screenshot/default/babygrogu_tch1.1280.jpg); opacity: 0.5;"
+        >
+          <h1>Wellcome</h1>
+          <p>This is my new salesforce home page</p> 
+        </div>
+          
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Salesforce</h3>
+              <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1200px-Salesforce.com_logo.svg.png" class="card-img-top" alt="Salesforce" />
+                <div class="card-body">
+                  <h5 class="card-title">About</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h3>Column 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Column 3</h3>        
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+          </div>
+        </div>
+        
+        </body>
+</aura:component>
